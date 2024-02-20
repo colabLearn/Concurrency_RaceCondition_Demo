@@ -30,8 +30,8 @@ void readFile(string filename)
 }
 int main()
 {
-    thread t1(readFile, "file1.txt");
-    thread t2(readFile, "file2.txt");
+   thread t1(readFile, "file1.txt");
+   thread t2(readFile, "file2.txt");
     
    t1.join();
    t2.join();
